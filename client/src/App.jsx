@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router";
 
 const App = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <div className="flex justify-center">
+      <Link to="/login"> Login </Link>
+    </div>
   );
 };
 
