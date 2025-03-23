@@ -1,38 +1,64 @@
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
+import { Button } from "@/components/ui/button"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
-function ModalExample() {
-  const [isOpen, setIsOpen] = useState(false);
-
+function Modal() {
   return (
-    <>
-      <button
-        className="text-[var(--color-button)] hover:text-[var(--color-primary)] duration-300 ease-out outline-none"
-        onClick={() => setIsOpen(true)}
-      >
-        Crear una
-      </button>
-
-      {/* Modal */}
-      <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="fixed inset-0 flex items-center justify-center bg-black opacity-75">
-        <Dialog.Panel className="flex justify-center flex-col bg-white rounded-xl shadow-xl w-1/2 h-1/2 transform duration-300 scale-95">
-          <Dialog.Title className="text-lg text-black font-bold">Registrarse</Dialog.Title>
-          <Dialog.Description className="text-black mt-2">
-            Este es un modal de ejemplo usando Tailwind y Headless UI.
-          </Dialog.Description>
-
-          {/* Botón para cerrar */}
-          <button
-            className="mt-4 px-4 py-2 w-1/6 bg-[var(--color-primary)] text-white rounded-full hover:bg-[var(--color-secondary)] duration-300 ease-out"
-            onClick={() => setIsOpen(false)}
-          >
-            Cerrar
-          </button>
-        </Dialog.Panel>
-      </Dialog>
-    </>
-  );
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button className="border-none bg-inherit p-0 hover:text-[var(--color-button)]">Crear cuenta</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle className="text-xl">Registrarse</DialogTitle>
+        </DialogHeader>
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Nombre
+            </Label>
+            <Input id="name" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Apellido/s
+            </Label>
+            <Input id="username" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Gmail
+            </Label>
+            <Input id="username" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Contraseña
+            </Label>
+            <Input id="username" type="password" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Contraseña
+            </Label>
+            <Input id="username" type="password" className="col-span-3" />
+          </div>
+        </div>
+        <DialogFooter>
+          <Button type="submit" className="bg-[var(--color-primary)]">Registrar</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  )
 }
 
-export default ModalExample
-
+export default Modal;

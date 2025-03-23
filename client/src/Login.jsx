@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import { FaUser } from "react-icons/fa";
-import  ModalExample  from "./components/modal.jsx";
+import Modal from "./components/modal.jsx";
 
 function Login() {
   return (
@@ -10,6 +10,7 @@ function Login() {
         <div className="flex items-center justify-center bg-white w-1/3 h-full rounded-l-3xl">
           <FaUser className="text-[var(--color-primary)] text-400 text-(length:--icon-size)" />
         </div>
+
         <div className="flex justify-center items-center flex-col w-2/3 h-full rounded-r-3xl">
           <div className="flex justify-center items-center gap-5 flex-col w-full h-2/3">
             <div className="flex justify-center flex-col w-2/3 h-1/4 ">
@@ -36,7 +37,7 @@ function Login() {
               Iniciar Sesión
             </Link>
             <h2>
-              No tienes cuenta? <ModalExample />
+              No tienes cuenta? <Modal />
             </h2>
           </div>
         </div>
