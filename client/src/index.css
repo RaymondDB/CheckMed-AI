@@ -5,6 +5,8 @@
   --color-secondary: #2F6690;
   --color-button: #81C3D7;
 
+  --icon-size: 25dvh;
+
   /*Letras generales*/
   color: white;
 }
