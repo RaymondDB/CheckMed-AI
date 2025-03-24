@@ -15,7 +15,7 @@ function Modal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="border-none bg-inherit text-md text-[var(--color-button)] p-0 hover:text-[var(--color-button)]">
+        <Button className="bg-transparent border-none outline-none text-md md:text-md lg:text-lg text-[var(--color-button)] p-0 hover:text-[var(--color-button)]">
           Crear cuenta
         </Button>
       </DialogTrigger>

@@ -2,6 +2,10 @@
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
 
+@media screen {
+  
+}
+
 :root {
   --color-primary: #16213d;
   --color-secondary: #2F6690;
