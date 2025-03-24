@@ -31,11 +31,11 @@ const Login = () => {
           </div>
         </div>
 
-        <div className="bg-[var(--color-secondary)] w-full sm:w-3/5 p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14 flex flex-col justify-center">
+        <div className="bg-[var(--color-secondary)] w-full md:w-3/5 p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14 flex flex-col justify-center">
           <form onSubmit={handleSubmit} className="w-full h-full">
            <div className="flex flex-col gap-6 jutify-center">
             <div>
-              <label className="block text-white text-lg pb-1 pl-1 md:pl-2 md:pb-1 md:text-xl lg:text-2xl">
+              <label className="block text-white text-lg pb-1 pl-1 md:pl-2 md:pb-1 md:text-xl">
                 Usuario
               </label>
               <input
@@ -47,7 +47,7 @@ const Login = () => {
             </div>
 
             <div className="pb-6 md:pb-7">
-              <label className="block text-white text-lg pb-1 pl-1 md:pl-2 md:pb-1 md:text-xl lg:text-2xl">
+              <label className="block text-white text-lg pb-1 pl-1 md:pl-2 md:pb-1 md:text-xl">
                 Contraseña
               </label>
               <input
