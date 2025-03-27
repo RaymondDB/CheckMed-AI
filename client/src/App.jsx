@@ -3,8 +3,9 @@ import { Link } from "react-router";
 
 const App = () => {
   return (
-    <div className="flex justify-center bg-black">
-      <Link to="/login"> Login </Link>
+    <div className="flex flex-col  items-center justify-center bg-black">
+      <Link to="/login" className="text-white"> Login </Link>
+      <Link to="/homepage" className="text-white">HomePage</Link>
     </div>
   );
 };

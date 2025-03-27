@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
-import Modal from "./components/modal";
+import Modal from "../components/modal";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -62,7 +62,7 @@ const Login = () => {
             <div className="flex flex-col items-center gap-7">
               <button
                 type="submit"
-                className="bg-[var(--color-button)] hover:bg-[var(--color-logo)] font-semibold text-white py-2 px-5 rounded-full outline-none duration-300 ease-out active:scale-110 md:text-base lg:text-lg"
+                className="bg-[var(--color-button)] hover:bg-[var(--color-logo)] font-semibold text-white py-2 px-5 rounded-full outline-none duration-300 ease-out active:scale-110 md:text-base lg:text-lg cursor-pointer"
               >
                 Iniciar sesión
               </button>
