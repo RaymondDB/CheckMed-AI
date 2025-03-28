@@ -2,6 +2,9 @@
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
 
+.bg-fondo {
+  background-image: url('./assets/fondoHome.svg');
+}
 
 :root {
   --color-primary: #16213d;
@@ -10,6 +13,8 @@
   --color-logo: #0a3142;
 
   --icon-size: 25dvh;
+
+  overflow-x: hidden;
 
   /*Letras generales*/
   color: white;
