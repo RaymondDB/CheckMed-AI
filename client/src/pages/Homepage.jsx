@@ -1,13 +1,11 @@
 import React from "react";
 import medImg from "../assets/296571-ffffff.svg";
+import { CiMedicalCross, CiMedicalClipboard, CiMedicalCase } from "react-icons/ci";
 
 function Homepage() {
   return (
     <>
       <div className="flex relative justify-center items-center bg-fondo bg-no-repeat bg-cover h-screen w-screen">
-        {/*<header className="flex bg-[var(--color-secondary)] w-full h-1/8 justify-center items-center text-white">
-        <h1 className="text-2xl font-bold">Check-Med</h1>
-      </header>*/}
         <section className="flex justify-center items-center w-full h-7/8 pt-10">
           <div className="flex justify-center items-center h-full w-1/2">
             <img src={medImg} alt="hola" className="w-2/3 h-2/3" />
@@ -36,14 +34,14 @@ function Homepage() {
       </div>
 
       <div className="flex relative bg-[var(--color-primary)] h-screen w-screen">
-        <article className="flex flex-col justify-center items-center bg-red-500 h-full w-2/6 gap-5">
-          <div className="bg-cover h-2/6"></div>
+        <article className="flex flex-col justify-center items-center h-full w-2/6 gap-8">
+          <div className="flex justify-center items-center bg-cover h-2/8 w-full"><CiMedicalCross className="text-white h-full w-full"/></div>
           <div>
             <h1 className="bg-[var(--color-secondary)] px-7 py-2 rounded-full text-white font-bold uppercase">
               Beneficios
             </h1>
           </div>
-          <div>
+          <div className="flex justify-center items-center">
             <p className="text-center text-wrap w-2/3 text-white text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               illo placeat doloremque repellendus atque magnam. Officia quisquam
@@ -53,11 +51,38 @@ function Homepage() {
           </div>
         </article>
 
-        <article className="flex flex-col items-center bg-blue-500 h-full w-2/6">
-          <h1>Uso</h1>
+        <article className="flex flex-col justify-center items-center h-full w-2/6 gap-8">
+          <div className="flex justify-center items-center bg-cover h-2/8 w-full"><CiMedicalClipboard  className="text-white h-full w-full"/></div>
+          <div>
+            <h1 className="bg-[var(--color-secondary)] px-7 py-2 rounded-full text-white font-bold uppercase">
+              Uso
+            </h1>
+          </div>
+          <div className="flex justify-center items-center">
+            <p className="text-center text-wrap w-2/3 text-white text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              illo placeat doloremque repellendus atque magnam. Officia quisquam
+              commodi temporibus fugiat repudiandae dolorum reiciendis maiores
+              molestiae, incidunt culpa asperiores earum praesentium.
+            </p>
+          </div>
         </article>
-        <article className="flex flex-col items-center bg-green-500 h-full w-2/6">
-          <h1>Tecnologia</h1>
+
+        <article className="flex flex-col justify-center items-center h-full w-2/6 gap-8">
+          <div className="flex justify-center items-center bg-cover h-2/8 w-full"><CiMedicalCase className="text-white h-full w-full"/></div>
+          <div>
+            <h1 className="bg-[var(--color-secondary)] px-7 py-2 rounded-full text-white font-bold uppercase">
+              Tecnología
+            </h1>
+          </div>
+          <div className="flex justify-center items-center">
+            <p className="text-center text-wrap w-2/3 text-white text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              illo placeat doloremque repellendus atque magnam. Officia quisquam
+              commodi temporibus fugiat repudiandae dolorum reiciendis maiores
+              molestiae, incidunt culpa asperiores earum praesentium.
+            </p>
+          </div>
         </article>
       </div>
     </>
